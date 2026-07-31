@@ -1,0 +1,8 @@
+{
+  "model_checkpoint": "C:\\Users\\melin\\easycom_saal\\checkpoints\\easycom_official_global_address_overnight_v1_best.pt",
+  "spatial_speaker_checkpoint": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_gcc_bbox_speaker_pilot_v1\\spatial_matcher.pt",
+  "candidate_threshold": 0.1988132745027542,
+  "vad_threshold": 0.8462258577346802,
+  "decision": "VAD gate AND global addressedness gate; spatial matcher selects speaker",
+  "test_sessions_used": []
+}

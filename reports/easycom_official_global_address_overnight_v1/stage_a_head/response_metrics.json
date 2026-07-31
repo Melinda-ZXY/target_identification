@@ -1,0 +1,315 @@
+{
+  "samples": 1641,
+  "addressed_samples": 446,
+  "non_target_samples": 1195,
+  "non_target_speech_samples": 866,
+  "silence_samples": 329,
+  "overall_action_accuracy": 0.6587446678854357,
+  "addressed_response_recall": 0.3654708520179372,
+  "addressed_correct_speaker_rate": 0.2825112107623318,
+  "non_target_rejection_rate": 0.799163179916318,
+  "non_target_false_response_rate": 0.20083682008368198,
+  "non_target_speech_rejection_rate": 0.7840646651270208,
+  "silence_rejection_rate": 0.8389057750759878,
+  "target_detection_auroc": 0.6995553220631555,
+  "target_detection_average_precision": 0.4154308353042171,
+  "target_detection_positive_rate": 0.27178549664838514,
+  "speech_only_target_detection_auroc": 0.6674105987013121,
+  "speech_only_target_detection_average_precision": 0.47620804447099596,
+  "speech_only_target_detection_positive_rate": 0.3399390243902439,
+  "counts": {
+    "addressed_correct_speaker": 126,
+    "addressed_wrong_speaker_or_rejected": 320,
+    "non_target_rejected": 955,
+    "non_target_false_response": 240,
+    "non_target_speech_rejected": 679,
+    "non_target_speech_false_response": 187,
+    "silence_rejected": 276,
+    "silence_false_response": 53
+  },
+  "speaker_task": {
+    "threshold": 0.5,
+    "candidate_accuracy": 0.739934456928839,
+    "speaker_recall": 0.6876876876876877,
+    "non_speaker_rejection": 0.7636054421768708,
+    "best_candidate_accuracy": 0.5618525289457648
+  },
+  "vad_task": {
+    "threshold": 0.5,
+    "auroc": 0.9276887649195641,
+    "average_precision": 0.9827407007388221,
+    "speech_recall": 0.9054878048780488,
+    "silence_rejection": 0.7477203647416414
+  },
+  "prediction_mode": "identity_global_response_gate_spatial_speaker",
+  "per_session": {
+    "Session_12": {
+      "samples": 758,
+      "addressed_speaker_top1": 0.8772727272727273,
+      "target_auroc": 0.7789624873267996,
+      "speech_only_target_auroc": 0.7207792207792207,
+      "vad_auroc": 0.9681447803495512
+    },
+    "Session_4": {
+      "samples": 883,
+      "addressed_speaker_top1": 0.7876106194690266,
+      "target_auroc": 0.6737921094812839,
+      "speech_only_target_auroc": 0.668027007016183,
+      "vad_auroc": 0.8744416873449131
+    }
+  },
+  "vad_response_gate_threshold": null,
+  "stateful_identity_memory": true,
+  "candidate_target_threshold": 0.5,
+  "threshold_curve": [
+    {
+      "threshold": 0.05,
+      "addressed_response_recall": 0.9932735426008968,
+      "addressed_correct_speaker_rate": 0.804932735426009,
+      "non_target_rejection_rate": 0.06443514644351464,
+      "non_target_false_response_rate": 0.9355648535564853,
+      "non_target_speech_rejection_rate": 0.016166281755196306,
+      "silence_rejection_rate": 0.19148936170212766
+    },
+    {
+      "threshold": 0.1,
+      "addressed_response_recall": 0.9417040358744395,
+      "addressed_correct_speaker_rate": 0.7600896860986547,
+      "non_target_rejection_rate": 0.2803347280334728,
+      "non_target_false_response_rate": 0.7196652719665272,
+      "non_target_speech_rejection_rate": 0.1928406466512702,
+      "silence_rejection_rate": 0.5106382978723404
+    },
+    {
+      "threshold": 0.15,
+      "addressed_response_recall": 0.8654708520179372,
+      "addressed_correct_speaker_rate": 0.6973094170403588,
+      "non_target_rejection_rate": 0.44602510460251044,
+      "non_target_false_response_rate": 0.5539748953974896,
+      "non_target_speech_rejection_rate": 0.3683602771362587,
+      "silence_rejection_rate": 0.6504559270516718
+    },
+    {
+      "threshold": 0.2,
+      "addressed_response_recall": 0.804932735426009,
+      "addressed_correct_speaker_rate": 0.647982062780269,
+      "non_target_rejection_rate": 0.5464435146443515,
+      "non_target_false_response_rate": 0.4535564853556485,
+      "non_target_speech_rejection_rate": 0.48036951501154734,
+      "silence_rejection_rate": 0.7203647416413373
+    },
+    {
+      "threshold": 0.25,
+      "addressed_response_recall": 0.7130044843049327,
+      "addressed_correct_speaker_rate": 0.5762331838565022,
+      "non_target_rejection_rate": 0.6309623430962343,
+      "non_target_false_response_rate": 0.36903765690376567,
+      "non_target_speech_rejection_rate": 0.581986143187067,
+      "silence_rejection_rate": 0.7598784194528876
+    },
+    {
+      "threshold": 0.3,
+      "addressed_response_recall": 0.6412556053811659,
+      "addressed_correct_speaker_rate": 0.5089686098654709,
+      "non_target_rejection_rate": 0.6820083682008368,
+      "non_target_false_response_rate": 0.31799163179916323,
+      "non_target_speech_rejection_rate": 0.6443418013856813,
+      "silence_rejection_rate": 0.7811550151975684
+    },
+    {
+      "threshold": 0.35,
+      "addressed_response_recall": 0.547085201793722,
+      "addressed_correct_speaker_rate": 0.4260089686098655,
+      "non_target_rejection_rate": 0.7179916317991631,
+      "non_target_false_response_rate": 0.28200836820083686,
+      "non_target_speech_rejection_rate": 0.687066974595843,
+      "silence_rejection_rate": 0.7993920972644377
+    },
+    {
+      "threshold": 0.4,
+      "addressed_response_recall": 0.484304932735426,
+      "addressed_correct_speaker_rate": 0.3744394618834081,
+      "non_target_rejection_rate": 0.7472803347280335,
+      "non_target_false_response_rate": 0.25271966527196654,
+      "non_target_speech_rejection_rate": 0.7240184757505773,
+      "silence_rejection_rate": 0.8085106382978723
+    },
+    {
+      "threshold": 0.45,
+      "addressed_response_recall": 0.4147982062780269,
+      "addressed_correct_speaker_rate": 0.3183856502242152,
+      "non_target_rejection_rate": 0.7723849372384938,
+      "non_target_false_response_rate": 0.22761506276150623,
+      "non_target_speech_rejection_rate": 0.7551963048498845,
+      "silence_rejection_rate": 0.817629179331307
+    },
+    {
+      "threshold": 0.5,
+      "addressed_response_recall": 0.3654708520179372,
+      "addressed_correct_speaker_rate": 0.2825112107623318,
+      "non_target_rejection_rate": 0.799163179916318,
+      "non_target_false_response_rate": 0.20083682008368198,
+      "non_target_speech_rejection_rate": 0.7840646651270208,
+      "silence_rejection_rate": 0.8389057750759878
+    },
+    {
+      "threshold": 0.55,
+      "addressed_response_recall": 0.32062780269058294,
+      "addressed_correct_speaker_rate": 0.24663677130044842,
+      "non_target_rejection_rate": 0.8192468619246862,
+      "non_target_false_response_rate": 0.1807531380753138,
+      "non_target_speech_rejection_rate": 0.8060046189376443,
+      "silence_rejection_rate": 0.8541033434650456
+    },
+    {
+      "threshold": 0.6,
+      "addressed_response_recall": 0.26905829596412556,
+      "addressed_correct_speaker_rate": 0.2040358744394619,
+      "non_target_rejection_rate": 0.8334728033472804,
+      "non_target_false_response_rate": 0.16652719665271964,
+      "non_target_speech_rejection_rate": 0.8221709006928406,
+      "silence_rejection_rate": 0.8632218844984803
+    },
+    {
+      "threshold": 0.65,
+      "addressed_response_recall": 0.2219730941704036,
+      "addressed_correct_speaker_rate": 0.16591928251121077,
+      "non_target_rejection_rate": 0.8619246861924686,
+      "non_target_false_response_rate": 0.13807531380753135,
+      "non_target_speech_rejection_rate": 0.8556581986143187,
+      "silence_rejection_rate": 0.878419452887538
+    },
+    {
+      "threshold": 0.7,
+      "addressed_response_recall": 0.18161434977578475,
+      "addressed_correct_speaker_rate": 0.14349775784753363,
+      "non_target_rejection_rate": 0.8778242677824267,
+      "non_target_false_response_rate": 0.12217573221757327,
+      "non_target_speech_rejection_rate": 0.8764434180138568,
+      "silence_rejection_rate": 0.8814589665653495
+    },
+    {
+      "threshold": 0.75,
+      "addressed_response_recall": 0.1547085201793722,
+      "addressed_correct_speaker_rate": 0.12556053811659193,
+      "non_target_rejection_rate": 0.897071129707113,
+      "non_target_false_response_rate": 0.102928870292887,
+      "non_target_speech_rejection_rate": 0.8960739030023095,
+      "silence_rejection_rate": 0.8996960486322189
+    },
+    {
+      "threshold": 0.8,
+      "addressed_response_recall": 0.1412556053811659,
+      "addressed_correct_speaker_rate": 0.11659192825112108,
+      "non_target_rejection_rate": 0.9121338912133892,
+      "non_target_false_response_rate": 0.08786610878661083,
+      "non_target_speech_rejection_rate": 0.9133949191685913,
+      "silence_rejection_rate": 0.9088145896656535
+    },
+    {
+      "threshold": 0.85,
+      "addressed_response_recall": 0.10538116591928251,
+      "addressed_correct_speaker_rate": 0.08520179372197309,
+      "non_target_rejection_rate": 0.9372384937238494,
+      "non_target_false_response_rate": 0.06276150627615062,
+      "non_target_speech_rejection_rate": 0.9434180138568129,
+      "silence_rejection_rate": 0.9209726443768997
+    },
+    {
+      "threshold": 0.9,
+      "addressed_response_recall": 0.07399103139013453,
+      "addressed_correct_speaker_rate": 0.06053811659192825,
+      "non_target_rejection_rate": 0.9589958158995816,
+      "non_target_false_response_rate": 0.041004184100418395,
+      "non_target_speech_rejection_rate": 0.9665127020785219,
+      "silence_rejection_rate": 0.939209726443769
+    },
+    {
+      "threshold": 0.95,
+      "addressed_response_recall": 0.02914798206278027,
+      "addressed_correct_speaker_rate": 0.020179372197309416,
+      "non_target_rejection_rate": 0.998326359832636,
+      "non_target_false_response_rate": 0.0016736401673640433,
+      "non_target_speech_rejection_rate": 0.9988452655889145,
+      "silence_rejection_rate": 0.9969604863221885
+    }
+  ],
+  "compute": {
+    "parameters": {
+      "total": 2520623,
+      "response_training_trainable": 759096,
+      "by_component": {
+        "video_encoder": 291264,
+        "audio_encoder": 234240,
+        "fusion": 459648,
+        "heatmap_head": 73857,
+        "candidate_head": 33537,
+        "temporal_candidate_head": 167697,
+        "independent_candidate_head": 168082,
+        "head_crop_encoder": 24576,
+        "head_crop_temporal_candidate_head": 192401,
+        "candidate_relation_head": 759096,
+        "no_response_head": 116225
+      }
+    },
+    "checkpoint_size_mb": 10.250250816345215,
+    "one_second_window": {
+      "mean_candidates": 2.603290676416819,
+      "approximate_gmacs": 49.089026614018266,
+      "approximate_gflops": 98.17805322803653,
+      "component_gmacs": {
+        "video_encoder": 20.88124416,
+        "audio_encoder": 0.453380544,
+        "fusion": 27.74564864,
+        "candidate_relation_head": 0.008753270018268165
+      },
+      "notes": "Convolution, linear, and GRU multiply-accumulates; excludes STFT, normalization, activations, pooling, and head tracking."
+    }
+  },
+  "timing": {
+    "batched_evaluation": {
+      "batch_size": 4,
+      "samples": 1641,
+      "wall_seconds": 1567.423419199884,
+      "end_to_end_ms_per_sample": 955.1635705057184,
+      "data_ms_per_sample": 895.2368906736579,
+      "model_ms_per_sample": 59.10107075128339,
+      "end_to_end_samples_per_second": 1.046941100853064,
+      "model_samples_per_second": 16.9201672201224,
+      "peak_cuda_memory_mb": 933.24365234375,
+      "peak_cuda_reserved_mb": 1244.0
+    },
+    "streaming_batch1": {
+      "batch_size": 1,
+      "warmup_samples": 5,
+      "device": "cuda",
+      "gpu_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "preprocessing": {
+        "samples": 45,
+        "mean_ms": 759.9461933287481,
+        "median_ms": 751.7797998152673,
+        "p95_ms": 936.1043004319072,
+        "min_ms": 529.8814997076988,
+        "max_ms": 989.1730002127588
+      },
+      "model_inference": {
+        "samples": 45,
+        "mean_ms": 58.183584393312536,
+        "median_ms": 34.16590020060539,
+        "p95_ms": 99.99029990285635,
+        "min_ms": 25.231500156223774,
+        "max_ms": 142.51840021461248
+      },
+      "end_to_end": {
+        "samples": 45,
+        "mean_ms": 818.2021466808187,
+        "median_ms": 807.4183999560773,
+        "p95_ms": 1031.7034996114671,
+        "min_ms": 556.5713997930288,
+        "max_ms": 1082.4079001322389
+      },
+      "peak_cuda_memory_mb": 279.8095703125,
+      "peak_cuda_reserved_mb": 1244.0
+    }
+  }
+}

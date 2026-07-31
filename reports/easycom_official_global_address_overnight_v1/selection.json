@@ -1,0 +1,130 @@
+{
+  "status": "complete_new_best",
+  "experiment": "frozen-backbone global addressedness head with automatic isolated-adapter follow-up",
+  "previous_recall_per_session": {
+    "Session_4": 0.6637168141592921,
+    "Session_12": 0.6681818181818182
+  },
+  "acceptance": "Both Session 4 and Session 12 recall strictly exceed the previous values while correct-speaker >= 0.50, NTS rejection >= 0.50, and silence rejection >= 0.85 separately on each session.",
+  "automatic_branch": "improvement_refinement",
+  "stage_a": {
+    "name": "stage_a_head",
+    "checkpoint": "C:\\Users\\melin\\easycom_saal\\checkpoints\\easycom_official_global_address_overnight_v1_stage_a_head_step2326.pt",
+    "predictions": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_official_global_address_overnight_v1\\stage_a_head\\response_predictions.csv",
+    "threshold_free_per_session": {
+      "Session_12": {
+        "addressed_speaker_top1": 0.8772727272727273,
+        "target_auroc": 0.7789624873267996,
+        "speech_only_target_auroc": 0.7207792207792207,
+        "vad_auroc": 0.9681447803495512
+      },
+      "Session_4": {
+        "addressed_speaker_top1": 0.7876106194690266,
+        "target_auroc": 0.6737921094812839,
+        "speech_only_target_auroc": 0.668027007016183,
+        "vad_auroc": 0.8744416873449131
+      }
+    },
+    "operating_point": {
+      "candidate_threshold": 0.1988132745027542,
+      "vad_threshold": 0.8462258577346802,
+      "per_session": {
+        "Session_12": {
+          "addressed_response_recall": 0.7,
+          "addressed_correct_speaker_rate": 0.6045454545454545,
+          "non_target_speech_rejection_rate": 0.6538461538461539,
+          "silence_rejection_rate": 1.0
+        },
+        "Session_4": {
+          "addressed_response_recall": 0.6991150442477876,
+          "addressed_correct_speaker_rate": 0.5265486725663717,
+          "non_target_speech_rejection_rate": 0.50199203187251,
+          "silence_rejection_rate": 0.935483870967742
+        }
+      },
+      "worst_session_addressed_recall": 0.6991150442477876
+    },
+    "outperforms_previous": true
+  },
+  "stage_b": {
+    "name": "stage_b_improvement_refinement",
+    "checkpoint": "C:\\Users\\melin\\easycom_saal\\checkpoints\\easycom_official_global_address_overnight_v1_stage_b_improvement_refinement_step600.pt",
+    "predictions": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_official_global_address_overnight_v1\\stage_b_improvement_refinement\\response_predictions.csv",
+    "threshold_free_per_session": {
+      "Session_12": {
+        "addressed_speaker_top1": 0.8772727272727273,
+        "target_auroc": 0.7831530922608989,
+        "speech_only_target_auroc": 0.7246503496503497,
+        "vad_auroc": 0.9681447803495512
+      },
+      "Session_4": {
+        "addressed_speaker_top1": 0.7876106194690266,
+        "target_auroc": 0.6727145377890923,
+        "speech_only_target_auroc": 0.6649860734054931,
+        "vad_auroc": 0.8744416873449131
+      }
+    },
+    "operating_point": {
+      "candidate_threshold": 0.21798230707645416,
+      "vad_threshold": 0.8462258577346802,
+      "per_session": {
+        "Session_12": {
+          "addressed_response_recall": 0.6954545454545454,
+          "addressed_correct_speaker_rate": 0.6045454545454545,
+          "non_target_speech_rejection_rate": 0.6840659340659341,
+          "silence_rejection_rate": 1.0
+        },
+        "Session_4": {
+          "addressed_response_recall": 0.6991150442477876,
+          "addressed_correct_speaker_rate": 0.5265486725663717,
+          "non_target_speech_rejection_rate": 0.5,
+          "silence_rejection_rate": 0.935483870967742
+        }
+      },
+      "worst_session_addressed_recall": 0.6954545454545454
+    },
+    "outperforms_previous": true
+  },
+  "selected_stage": {
+    "name": "stage_a_head",
+    "checkpoint": "C:\\Users\\melin\\easycom_saal\\checkpoints\\easycom_official_global_address_overnight_v1_stage_a_head_step2326.pt",
+    "predictions": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_official_global_address_overnight_v1\\stage_a_head\\response_predictions.csv",
+    "threshold_free_per_session": {
+      "Session_12": {
+        "addressed_speaker_top1": 0.8772727272727273,
+        "target_auroc": 0.7789624873267996,
+        "speech_only_target_auroc": 0.7207792207792207,
+        "vad_auroc": 0.9681447803495512
+      },
+      "Session_4": {
+        "addressed_speaker_top1": 0.7876106194690266,
+        "target_auroc": 0.6737921094812839,
+        "speech_only_target_auroc": 0.668027007016183,
+        "vad_auroc": 0.8744416873449131
+      }
+    },
+    "operating_point": {
+      "candidate_threshold": 0.1988132745027542,
+      "vad_threshold": 0.8462258577346802,
+      "per_session": {
+        "Session_12": {
+          "addressed_response_recall": 0.7,
+          "addressed_correct_speaker_rate": 0.6045454545454545,
+          "non_target_speech_rejection_rate": 0.6538461538461539,
+          "silence_rejection_rate": 1.0
+        },
+        "Session_4": {
+          "addressed_response_recall": 0.6991150442477876,
+          "addressed_correct_speaker_rate": 0.5265486725663717,
+          "non_target_speech_rejection_rate": 0.50199203187251,
+          "silence_rejection_rate": 0.935483870967742
+        }
+      },
+      "worst_session_addressed_recall": 0.6991150442477876
+    },
+    "outperforms_previous": true
+  },
+  "best_checkpoint": "C:\\Users\\melin\\easycom_saal\\checkpoints\\easycom_official_global_address_overnight_v1_best.pt",
+  "deployment_manifest": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_official_global_address_overnight_v1\\deployment_manifest.json",
+  "test_sessions_used": []
+}

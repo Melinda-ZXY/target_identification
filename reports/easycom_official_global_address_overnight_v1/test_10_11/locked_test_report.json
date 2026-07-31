@@ -1,0 +1,122 @@
+{
+  "status": "complete_locked_test",
+  "completed_at": "2026-07-29T11:53:31+08:00",
+  "configuration": {
+    "model_checkpoint": "C:\\Users\\melin\\easycom_saal\\checkpoints\\easycom_official_global_address_overnight_v1_best.pt",
+    "spatial_speaker_checkpoint": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_gcc_bbox_speaker_pilot_v1\\spatial_matcher.pt",
+    "test_manifest": "C:\\Users\\melin\\easycom_saal\\manifests\\easycom_official_split_test_10_11.json",
+    "test_sessions": [
+      "Session_10",
+      "Session_11"
+    ],
+    "candidate_threshold": 0.1988132745027542,
+    "vad_threshold": 0.8462258577346802,
+    "decision": "VAD gate AND global addressedness gate; spatial matcher selects speaker",
+    "selected_stage": "stage_a_head"
+  },
+  "input_sha256": {
+    "model_checkpoint": "6118fdcd753795c3cba994be40795c311d8ce8ed0f1da98514931e0964e870ee",
+    "spatial_speaker_checkpoint": "34b5e3cf1af05a3e6cc44321b45ea4f91a21445cc2e57e6e61701fccfddb9839",
+    "test_manifest": "85bc229db97e6a84747c496ec36f0581d54b3abb45b42ccb81c222ecb9e02db9"
+  },
+  "artifacts": {
+    "metrics": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_official_global_address_overnight_v1\\test_10_11\\response_metrics.json",
+    "predictions": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_official_global_address_overnight_v1\\test_10_11\\response_predictions.csv",
+    "stdout_log": "C:\\Users\\melin\\easycom_saal\\logs\\easycom_official_global_address_overnight_v1_test_10_11.out.log",
+    "stderr_log": "C:\\Users\\melin\\easycom_saal\\logs\\easycom_official_global_address_overnight_v1_test_10_11.err.log"
+  },
+  "overall_operating_metrics": {
+    "samples": 2212,
+    "addressed_response_recall": 0.6734375,
+    "addressed_correct_speaker_rate": 0.55625,
+    "non_target_speech_rejection_rate": 0.5887939221272555,
+    "silence_rejection_rate": 0.9942196531791907,
+    "target_detection_auroc": 0.7836444417938931,
+    "speech_only_target_detection_auroc": 0.7252581908831909
+  },
+  "per_session_operating_metrics": {
+    "Session_10": {
+      "samples": 1313,
+      "addressed_samples": 463,
+      "non_target_speech_samples": 539,
+      "silence_samples": 311,
+      "addressed_response_recall": 0.734341252699784,
+      "addressed_correct_speaker_rate": 0.6069114470842333,
+      "non_target_speech_rejection_rate": 0.35064935064935066,
+      "silence_rejection_rate": 0.9903536977491961
+    },
+    "Session_11": {
+      "samples": 899,
+      "addressed_samples": 177,
+      "non_target_speech_samples": 514,
+      "silence_samples": 208,
+      "addressed_response_recall": 0.5141242937853108,
+      "addressed_correct_speaker_rate": 0.423728813559322,
+      "non_target_speech_rejection_rate": 0.8385214007782101,
+      "silence_rejection_rate": 1.0
+    }
+  },
+  "threshold_free_per_session": {
+    "Session_10": {
+      "samples": 1313,
+      "addressed_speaker_top1": 0.8660907127429806,
+      "target_auroc": 0.7509312666751365,
+      "speech_only_target_auroc": 0.6745833617169624,
+      "vad_auroc": 0.9569285865567899
+    },
+    "Session_11": {
+      "samples": 899,
+      "addressed_speaker_top1": 0.8248587570621468,
+      "target_auroc": 0.8295146877005181,
+      "speech_only_target_auroc": 0.7703730572226253,
+      "vad_auroc": 0.9423355226539019
+    }
+  },
+  "timing": {
+    "batched_evaluation": {
+      "batch_size": 4,
+      "samples": 2212,
+      "wall_seconds": 2414.0640963000005,
+      "end_to_end_ms_per_sample": 1091.349048960217,
+      "data_ms_per_sample": 1026.2515537070526,
+      "model_ms_per_sample": 64.1299671338054,
+      "end_to_end_samples_per_second": 0.9162971287259103,
+      "model_samples_per_second": 15.593334047926888,
+      "peak_cuda_memory_mb": 933.22216796875,
+      "peak_cuda_reserved_mb": 1244.0
+    },
+    "streaming_batch1": {
+      "batch_size": 1,
+      "warmup_samples": 5,
+      "device": "cuda",
+      "gpu_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "preprocessing": {
+        "samples": 45,
+        "mean_ms": 904.8733911113231,
+        "median_ms": 925.0711999993655,
+        "p95_ms": 1053.4330999980739,
+        "min_ms": 700.1911000006658,
+        "max_ms": 1140.4089999996359
+      },
+      "model_inference": {
+        "samples": 45,
+        "mean_ms": 71.7098733332629,
+        "median_ms": 92.3651000011887,
+        "p95_ms": 101.20829999868874,
+        "min_ms": 24.81679999982589,
+        "max_ms": 143.4808999983943
+      },
+      "end_to_end": {
+        "samples": 45,
+        "mean_ms": 976.6497933330861,
+        "median_ms": 982.021399999212,
+        "p95_ms": 1184.8028999993403,
+        "min_ms": 726.0416999997688,
+        "max_ms": 1228.1788999971468
+      },
+      "peak_cuda_memory_mb": 279.7880859375,
+      "peak_cuda_reserved_mb": 1244.0
+    }
+  },
+  "test_data_was_used_for_selection_or_tuning": false
+}

@@ -1,0 +1,886 @@
+{
+  "status": "passed_integration_gate",
+  "method": "signed GCC-PHAT audio direction to candidate bbox compatibility",
+  "test_sessions_used": [],
+  "feature": {
+    "sample_rate": 16000,
+    "max_lag_ms": 1.0,
+    "microphone_pairs": 15,
+    "audio_dimension": 495,
+    "bbox_dimension": 12
+  },
+  "train_windows": 4605,
+  "validation_windows": 849,
+  "loso": {
+    "selected_epoch": 5,
+    "selection": "maximize mean held-session addressed top1; tie-break worst session then all speech",
+    "by_epoch": {
+      "5": {
+        "mean_addressed_top1": 0.8912617322539423,
+        "worst_addressed_top1": 0.7380952380952381,
+        "mean_all_speech_top1": 0.8749861323405572,
+        "per_session": {
+          "Session_1": {
+            "all_speech_top1": 0.850356294536817,
+            "addressed_speaker_top1": 0.9224137931034483,
+            "windows": 421,
+            "addressed_windows": 232
+          },
+          "Session_2": {
+            "all_speech_top1": 0.8055555555555556,
+            "addressed_speaker_top1": 0.8951612903225806,
+            "windows": 360,
+            "addressed_windows": 124
+          },
+          "Session_3": {
+            "all_speech_top1": 0.9326923076923077,
+            "addressed_speaker_top1": 0.9585062240663901,
+            "windows": 624,
+            "addressed_windows": 482
+          },
+          "Session_5": {
+            "all_speech_top1": 0.8604269293924466,
+            "addressed_speaker_top1": 0.8925233644859814,
+            "windows": 609,
+            "addressed_windows": 428
+          },
+          "Session_6": {
+            "all_speech_top1": 0.8677165354330708,
+            "addressed_speaker_top1": 0.9033078880407125,
+            "windows": 635,
+            "addressed_windows": 393
+          },
+          "Session_7": {
+            "all_speech_top1": 0.8913385826771654,
+            "addressed_speaker_top1": 0.9026548672566371,
+            "windows": 635,
+            "addressed_windows": 452
+          },
+          "Session_8": {
+            "all_speech_top1": 0.88,
+            "addressed_speaker_top1": 0.7380952380952381,
+            "windows": 550,
+            "addressed_windows": 84
+          },
+          "Session_9": {
+            "all_speech_top1": 0.9118028534370947,
+            "addressed_speaker_top1": 0.9174311926605505,
+            "windows": 771,
+            "addressed_windows": 218
+          }
+        }
+      },
+      "10": {
+        "mean_addressed_top1": 0.8767108987215821,
+        "worst_addressed_top1": 0.7023809523809523,
+        "mean_all_speech_top1": 0.8714603094843244,
+        "per_session": {
+          "Session_1": {
+            "all_speech_top1": 0.836104513064133,
+            "addressed_speaker_top1": 0.9051724137931034,
+            "windows": 421,
+            "addressed_windows": 232
+          },
+          "Session_2": {
+            "all_speech_top1": 0.8166666666666667,
+            "addressed_speaker_top1": 0.8709677419354839,
+            "windows": 360,
+            "addressed_windows": 124
+          },
+          "Session_3": {
+            "all_speech_top1": 0.9134615384615384,
+            "addressed_speaker_top1": 0.9336099585062241,
+            "windows": 624,
+            "addressed_windows": 482
+          },
+          "Session_5": {
+            "all_speech_top1": 0.8669950738916257,
+            "addressed_speaker_top1": 0.8925233644859814,
+            "windows": 609,
+            "addressed_windows": 428
+          },
+          "Session_6": {
+            "all_speech_top1": 0.862992125984252,
+            "addressed_speaker_top1": 0.8854961832061069,
+            "windows": 635,
+            "addressed_windows": 393
+          },
+          "Session_7": {
+            "all_speech_top1": 0.9007874015748032,
+            "addressed_speaker_top1": 0.9336283185840708,
+            "windows": 635,
+            "addressed_windows": 452
+          },
+          "Session_8": {
+            "all_speech_top1": 0.8745454545454545,
+            "addressed_speaker_top1": 0.7023809523809523,
+            "windows": 550,
+            "addressed_windows": 84
+          },
+          "Session_9": {
+            "all_speech_top1": 0.9001297016861219,
+            "addressed_speaker_top1": 0.8899082568807339,
+            "windows": 771,
+            "addressed_windows": 218
+          }
+        }
+      },
+      "20": {
+        "mean_addressed_top1": 0.886058805101562,
+        "worst_addressed_top1": 0.7261904761904762,
+        "mean_all_speech_top1": 0.876528473718698,
+        "per_session": {
+          "Session_1": {
+            "all_speech_top1": 0.8456057007125891,
+            "addressed_speaker_top1": 0.9181034482758621,
+            "windows": 421,
+            "addressed_windows": 232
+          },
+          "Session_2": {
+            "all_speech_top1": 0.8416666666666667,
+            "addressed_speaker_top1": 0.8870967741935484,
+            "windows": 360,
+            "addressed_windows": 124
+          },
+          "Session_3": {
+            "all_speech_top1": 0.9246794871794872,
+            "addressed_speaker_top1": 0.9522821576763485,
+            "windows": 624,
+            "addressed_windows": 482
+          },
+          "Session_5": {
+            "all_speech_top1": 0.8735632183908046,
+            "addressed_speaker_top1": 0.8995327102803738,
+            "windows": 609,
+            "addressed_windows": 428
+          },
+          "Session_6": {
+            "all_speech_top1": 0.8661417322834646,
+            "addressed_speaker_top1": 0.8880407124681934,
+            "windows": 635,
+            "addressed_windows": 393
+          },
+          "Session_7": {
+            "all_speech_top1": 0.8913385826771654,
+            "addressed_speaker_top1": 0.918141592920354,
+            "windows": 635,
+            "addressed_windows": 452
+          },
+          "Session_8": {
+            "all_speech_top1": 0.8781818181818182,
+            "addressed_speaker_top1": 0.7261904761904762,
+            "windows": 550,
+            "addressed_windows": 84
+          },
+          "Session_9": {
+            "all_speech_top1": 0.8910505836575876,
+            "addressed_speaker_top1": 0.8990825688073395,
+            "windows": 771,
+            "addressed_windows": 218
+          }
+        }
+      },
+      "40": {
+        "mean_addressed_top1": 0.8781132462546344,
+        "worst_addressed_top1": 0.6904761904761905,
+        "mean_all_speech_top1": 0.8739027842048334,
+        "per_session": {
+          "Session_1": {
+            "all_speech_top1": 0.8479809976247031,
+            "addressed_speaker_top1": 0.9094827586206896,
+            "windows": 421,
+            "addressed_windows": 232
+          },
+          "Session_2": {
+            "all_speech_top1": 0.8333333333333334,
+            "addressed_speaker_top1": 0.8790322580645161,
+            "windows": 360,
+            "addressed_windows": 124
+          },
+          "Session_3": {
+            "all_speech_top1": 0.9198717948717948,
+            "addressed_speaker_top1": 0.950207468879668,
+            "windows": 624,
+            "addressed_windows": 482
+          },
+          "Session_5": {
+            "all_speech_top1": 0.8587848932676518,
+            "addressed_speaker_top1": 0.8948598130841121,
+            "windows": 609,
+            "addressed_windows": 428
+          },
+          "Session_6": {
+            "all_speech_top1": 0.8755905511811024,
+            "addressed_speaker_top1": 0.8905852417302799,
+            "windows": 635,
+            "addressed_windows": 393
+          },
+          "Session_7": {
+            "all_speech_top1": 0.8929133858267716,
+            "addressed_speaker_top1": 0.9203539823008849,
+            "windows": 635,
+            "addressed_windows": 452
+          },
+          "Session_8": {
+            "all_speech_top1": 0.8781818181818182,
+            "addressed_speaker_top1": 0.6904761904761905,
+            "windows": 550,
+            "addressed_windows": 84
+          },
+          "Session_9": {
+            "all_speech_top1": 0.8845654993514915,
+            "addressed_speaker_top1": 0.8899082568807339,
+            "windows": 771,
+            "addressed_windows": 218
+          }
+        }
+      }
+    }
+  },
+  "validation": {
+    "per_session": {
+      "Session_12": {
+        "all_speech_top1": 0.8617886178861789,
+        "addressed_speaker_top1": 0.859375,
+        "windows": 369,
+        "addressed_windows": 192
+      },
+      "Session_4": {
+        "all_speech_top1": 0.7854166666666667,
+        "addressed_speaker_top1": 0.7727272727272727,
+        "windows": 480,
+        "addressed_windows": 198
+      }
+    },
+    "per_recording": {
+      "Session_12/00-00-000": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 13,
+        "addressed_windows": 10
+      },
+      "Session_12/01-00-273": {
+        "all_speech_top1": 0.9487179487179487,
+        "addressed_speaker_top1": 0.8,
+        "windows": 39,
+        "addressed_windows": 5
+      },
+      "Session_12/02-00-307": {
+        "all_speech_top1": 0.8,
+        "addressed_speaker_top1": NaN,
+        "windows": 5,
+        "addressed_windows": 0
+      },
+      "Session_12/03-00-314": {
+        "all_speech_top1": 0.9090909090909091,
+        "addressed_speaker_top1": 1.0,
+        "windows": 11,
+        "addressed_windows": 9
+      },
+      "Session_12/04-00-332": {
+        "all_speech_top1": 0.9166666666666666,
+        "addressed_speaker_top1": 0.8947368421052632,
+        "windows": 36,
+        "addressed_windows": 19
+      },
+      "Session_12/05-00-338": {
+        "all_speech_top1": 0.9090909090909091,
+        "addressed_speaker_top1": 0.75,
+        "windows": 22,
+        "addressed_windows": 4
+      },
+      "Session_12/07-00-370": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 2,
+        "addressed_windows": 0
+      },
+      "Session_12/08-00-374": {
+        "all_speech_top1": 0.5,
+        "addressed_speaker_top1": NaN,
+        "windows": 4,
+        "addressed_windows": 0
+      },
+      "Session_12/09-00-390": {
+        "all_speech_top1": 0.8571428571428571,
+        "addressed_speaker_top1": 0.6666666666666666,
+        "windows": 7,
+        "addressed_windows": 3
+      },
+      "Session_12/10-00-415": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 5,
+        "addressed_windows": 1
+      },
+      "Session_12/12-00-428": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 5,
+        "addressed_windows": 5
+      },
+      "Session_12/13-00-458": {
+        "all_speech_top1": 0.6923076923076923,
+        "addressed_speaker_top1": NaN,
+        "windows": 13,
+        "addressed_windows": 0
+      },
+      "Session_12/14-00-450": {
+        "all_speech_top1": 0.8166666666666667,
+        "addressed_speaker_top1": 0.8305084745762712,
+        "windows": 60,
+        "addressed_windows": 59
+      },
+      "Session_12/15-00-460": {
+        "all_speech_top1": 0.75,
+        "addressed_speaker_top1": NaN,
+        "windows": 4,
+        "addressed_windows": 0
+      },
+      "Session_12/16-00-490": {
+        "all_speech_top1": 0.9047619047619048,
+        "addressed_speaker_top1": 1.0,
+        "windows": 21,
+        "addressed_windows": 2
+      },
+      "Session_12/17-00-468": {
+        "all_speech_top1": 0.9090909090909091,
+        "addressed_speaker_top1": NaN,
+        "windows": 11,
+        "addressed_windows": 0
+      },
+      "Session_12/18-00-494": {
+        "all_speech_top1": 0.5,
+        "addressed_speaker_top1": 0.5,
+        "windows": 2,
+        "addressed_windows": 2
+      },
+      "Session_12/19-00-511": {
+        "all_speech_top1": 0.868421052631579,
+        "addressed_speaker_top1": 0.8888888888888888,
+        "windows": 38,
+        "addressed_windows": 27
+      },
+      "Session_12/20-00-535": {
+        "all_speech_top1": 0.75,
+        "addressed_speaker_top1": 0.8181818181818182,
+        "windows": 12,
+        "addressed_windows": 11
+      },
+      "Session_12/21-00-544": {
+        "all_speech_top1": 0.9230769230769231,
+        "addressed_speaker_top1": 0.9090909090909091,
+        "windows": 13,
+        "addressed_windows": 11
+      },
+      "Session_12/22-00-569": {
+        "all_speech_top1": 0.6,
+        "addressed_speaker_top1": 0.6,
+        "windows": 5,
+        "addressed_windows": 5
+      },
+      "Session_12/23-00-566": {
+        "all_speech_top1": 0.8181818181818182,
+        "addressed_speaker_top1": 0.8,
+        "windows": 11,
+        "addressed_windows": 10
+      },
+      "Session_12/24-00-587": {
+        "all_speech_top1": 0.8,
+        "addressed_speaker_top1": 0.875,
+        "windows": 10,
+        "addressed_windows": 8
+      },
+      "Session_12/25-00-593": {
+        "all_speech_top1": 0.7272727272727273,
+        "addressed_speaker_top1": NaN,
+        "windows": 11,
+        "addressed_windows": 0
+      },
+      "Session_12/27-00-621": {
+        "all_speech_top1": 0.875,
+        "addressed_speaker_top1": NaN,
+        "windows": 8,
+        "addressed_windows": 0
+      },
+      "Session_12/29-00-647": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 1,
+        "addressed_windows": 1
+      },
+      "Session_4/00-00-000": {
+        "all_speech_top1": 0.9354838709677419,
+        "addressed_speaker_top1": 0.9508196721311475,
+        "windows": 62,
+        "addressed_windows": 61
+      },
+      "Session_4/01-00-293": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 14,
+        "addressed_windows": 4
+      },
+      "Session_4/02-00-322": {
+        "all_speech_top1": 0.7333333333333333,
+        "addressed_speaker_top1": NaN,
+        "windows": 30,
+        "addressed_windows": 0
+      },
+      "Session_4/03-00-332": {
+        "all_speech_top1": 0.72,
+        "addressed_speaker_top1": NaN,
+        "windows": 25,
+        "addressed_windows": 0
+      },
+      "Session_4/04-00-349": {
+        "all_speech_top1": 0.6304347826086957,
+        "addressed_speaker_top1": 0.37037037037037035,
+        "windows": 46,
+        "addressed_windows": 27
+      },
+      "Session_4/05-00-353": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 34,
+        "addressed_windows": 0
+      },
+      "Session_4/06-00-363": {
+        "all_speech_top1": 0.6,
+        "addressed_speaker_top1": NaN,
+        "windows": 15,
+        "addressed_windows": 0
+      },
+      "Session_4/08-00-381": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 4,
+        "addressed_windows": 0
+      },
+      "Session_4/09-00-400": {
+        "all_speech_top1": 0.6666666666666666,
+        "addressed_speaker_top1": 1.0,
+        "windows": 6,
+        "addressed_windows": 1
+      },
+      "Session_4/10-00-415": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 2,
+        "addressed_windows": 0
+      },
+      "Session_4/11-00-428": {
+        "all_speech_top1": 0.8,
+        "addressed_speaker_top1": 0.6666666666666666,
+        "windows": 5,
+        "addressed_windows": 3
+      },
+      "Session_4/15-00-480": {
+        "all_speech_top1": 0.8461538461538461,
+        "addressed_speaker_top1": 1.0,
+        "windows": 13,
+        "addressed_windows": 3
+      },
+      "Session_4/16-00-501": {
+        "all_speech_top1": 0.9,
+        "addressed_speaker_top1": NaN,
+        "windows": 20,
+        "addressed_windows": 0
+      },
+      "Session_4/18-00-512": {
+        "all_speech_top1": 0.6363636363636364,
+        "addressed_speaker_top1": 0.6666666666666666,
+        "windows": 11,
+        "addressed_windows": 9
+      },
+      "Session_4/19-00-532": {
+        "all_speech_top1": 0.7567567567567568,
+        "addressed_speaker_top1": 0.7567567567567568,
+        "windows": 37,
+        "addressed_windows": 37
+      },
+      "Session_4/20-00-540": {
+        "all_speech_top1": 0.6666666666666666,
+        "addressed_speaker_top1": NaN,
+        "windows": 9,
+        "addressed_windows": 0
+      },
+      "Session_4/21-00-559": {
+        "all_speech_top1": 0.7647058823529411,
+        "addressed_speaker_top1": 1.0,
+        "windows": 17,
+        "addressed_windows": 2
+      },
+      "Session_4/22-00-570": {
+        "all_speech_top1": 0.7352941176470589,
+        "addressed_speaker_top1": 0.6842105263157895,
+        "windows": 34,
+        "addressed_windows": 19
+      },
+      "Session_4/23-00-578": {
+        "all_speech_top1": 0.6538461538461539,
+        "addressed_speaker_top1": 0.75,
+        "windows": 26,
+        "addressed_windows": 12
+      },
+      "Session_4/24-00-594": {
+        "all_speech_top1": 0.7428571428571429,
+        "addressed_speaker_top1": 0.7142857142857143,
+        "windows": 35,
+        "addressed_windows": 7
+      },
+      "Session_4/25-00-599": {
+        "all_speech_top1": 0.8421052631578947,
+        "addressed_speaker_top1": 0.8333333333333334,
+        "windows": 19,
+        "addressed_windows": 6
+      },
+      "Session_4/26-00-615": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 3,
+        "addressed_windows": 0
+      },
+      "Session_4/29-00-654": {
+        "all_speech_top1": 0.3333333333333333,
+        "addressed_speaker_top1": NaN,
+        "windows": 6,
+        "addressed_windows": 0
+      },
+      "Session_4/30-00-679": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 7,
+        "addressed_windows": 7
+      }
+    }
+  },
+  "geometry_only_validation": {
+    "per_session": {
+      "Session_12": {
+        "all_speech_top1": 0.6991869918699187,
+        "addressed_speaker_top1": 0.7447916666666666,
+        "windows": 369,
+        "addressed_windows": 192
+      },
+      "Session_4": {
+        "all_speech_top1": 0.6395833333333333,
+        "addressed_speaker_top1": 0.7272727272727273,
+        "windows": 480,
+        "addressed_windows": 198
+      }
+    },
+    "per_recording": {
+      "Session_12/00-00-000": {
+        "all_speech_top1": 0.9230769230769231,
+        "addressed_speaker_top1": 0.9,
+        "windows": 13,
+        "addressed_windows": 10
+      },
+      "Session_12/01-00-273": {
+        "all_speech_top1": 0.7692307692307693,
+        "addressed_speaker_top1": 1.0,
+        "windows": 39,
+        "addressed_windows": 5
+      },
+      "Session_12/02-00-307": {
+        "all_speech_top1": 0.6,
+        "addressed_speaker_top1": NaN,
+        "windows": 5,
+        "addressed_windows": 0
+      },
+      "Session_12/03-00-314": {
+        "all_speech_top1": 0.8181818181818182,
+        "addressed_speaker_top1": 0.7777777777777778,
+        "windows": 11,
+        "addressed_windows": 9
+      },
+      "Session_12/04-00-332": {
+        "all_speech_top1": 0.4166666666666667,
+        "addressed_speaker_top1": 0.3684210526315789,
+        "windows": 36,
+        "addressed_windows": 19
+      },
+      "Session_12/05-00-338": {
+        "all_speech_top1": 0.6818181818181818,
+        "addressed_speaker_top1": 0.25,
+        "windows": 22,
+        "addressed_windows": 4
+      },
+      "Session_12/07-00-370": {
+        "all_speech_top1": 0.5,
+        "addressed_speaker_top1": NaN,
+        "windows": 2,
+        "addressed_windows": 0
+      },
+      "Session_12/08-00-374": {
+        "all_speech_top1": 0.75,
+        "addressed_speaker_top1": NaN,
+        "windows": 4,
+        "addressed_windows": 0
+      },
+      "Session_12/09-00-390": {
+        "all_speech_top1": 0.0,
+        "addressed_speaker_top1": 0.0,
+        "windows": 7,
+        "addressed_windows": 3
+      },
+      "Session_12/10-00-415": {
+        "all_speech_top1": 0.6,
+        "addressed_speaker_top1": 1.0,
+        "windows": 5,
+        "addressed_windows": 1
+      },
+      "Session_12/12-00-428": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 5,
+        "addressed_windows": 5
+      },
+      "Session_12/13-00-458": {
+        "all_speech_top1": 0.46153846153846156,
+        "addressed_speaker_top1": NaN,
+        "windows": 13,
+        "addressed_windows": 0
+      },
+      "Session_12/14-00-450": {
+        "all_speech_top1": 0.9833333333333333,
+        "addressed_speaker_top1": 1.0,
+        "windows": 60,
+        "addressed_windows": 59
+      },
+      "Session_12/15-00-460": {
+        "all_speech_top1": 0.25,
+        "addressed_speaker_top1": NaN,
+        "windows": 4,
+        "addressed_windows": 0
+      },
+      "Session_12/16-00-490": {
+        "all_speech_top1": 0.8095238095238095,
+        "addressed_speaker_top1": 0.0,
+        "windows": 21,
+        "addressed_windows": 2
+      },
+      "Session_12/17-00-468": {
+        "all_speech_top1": 0.7272727272727273,
+        "addressed_speaker_top1": NaN,
+        "windows": 11,
+        "addressed_windows": 0
+      },
+      "Session_12/18-00-494": {
+        "all_speech_top1": 0.0,
+        "addressed_speaker_top1": 0.0,
+        "windows": 2,
+        "addressed_windows": 2
+      },
+      "Session_12/19-00-511": {
+        "all_speech_top1": 0.6578947368421053,
+        "addressed_speaker_top1": 0.7407407407407407,
+        "windows": 38,
+        "addressed_windows": 27
+      },
+      "Session_12/20-00-535": {
+        "all_speech_top1": 0.25,
+        "addressed_speaker_top1": 0.18181818181818182,
+        "windows": 12,
+        "addressed_windows": 11
+      },
+      "Session_12/21-00-544": {
+        "all_speech_top1": 0.8461538461538461,
+        "addressed_speaker_top1": 0.8181818181818182,
+        "windows": 13,
+        "addressed_windows": 11
+      },
+      "Session_12/22-00-569": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": 1.0,
+        "windows": 5,
+        "addressed_windows": 5
+      },
+      "Session_12/23-00-566": {
+        "all_speech_top1": 0.6363636363636364,
+        "addressed_speaker_top1": 0.6,
+        "windows": 11,
+        "addressed_windows": 10
+      },
+      "Session_12/24-00-587": {
+        "all_speech_top1": 0.7,
+        "addressed_speaker_top1": 0.875,
+        "windows": 10,
+        "addressed_windows": 8
+      },
+      "Session_12/25-00-593": {
+        "all_speech_top1": 0.45454545454545453,
+        "addressed_speaker_top1": NaN,
+        "windows": 11,
+        "addressed_windows": 0
+      },
+      "Session_12/27-00-621": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 8,
+        "addressed_windows": 0
+      },
+      "Session_12/29-00-647": {
+        "all_speech_top1": 0.0,
+        "addressed_speaker_top1": 0.0,
+        "windows": 1,
+        "addressed_windows": 1
+      },
+      "Session_4/00-00-000": {
+        "all_speech_top1": 0.9193548387096774,
+        "addressed_speaker_top1": 0.9180327868852459,
+        "windows": 62,
+        "addressed_windows": 61
+      },
+      "Session_4/01-00-293": {
+        "all_speech_top1": 0.7857142857142857,
+        "addressed_speaker_top1": 1.0,
+        "windows": 14,
+        "addressed_windows": 4
+      },
+      "Session_4/02-00-322": {
+        "all_speech_top1": 0.6666666666666666,
+        "addressed_speaker_top1": NaN,
+        "windows": 30,
+        "addressed_windows": 0
+      },
+      "Session_4/03-00-332": {
+        "all_speech_top1": 0.68,
+        "addressed_speaker_top1": NaN,
+        "windows": 25,
+        "addressed_windows": 0
+      },
+      "Session_4/04-00-349": {
+        "all_speech_top1": 0.6086956521739131,
+        "addressed_speaker_top1": 0.5185185185185185,
+        "windows": 46,
+        "addressed_windows": 27
+      },
+      "Session_4/05-00-353": {
+        "all_speech_top1": 0.38235294117647056,
+        "addressed_speaker_top1": NaN,
+        "windows": 34,
+        "addressed_windows": 0
+      },
+      "Session_4/06-00-363": {
+        "all_speech_top1": 0.4,
+        "addressed_speaker_top1": NaN,
+        "windows": 15,
+        "addressed_windows": 0
+      },
+      "Session_4/08-00-381": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 4,
+        "addressed_windows": 0
+      },
+      "Session_4/09-00-400": {
+        "all_speech_top1": 0.8333333333333334,
+        "addressed_speaker_top1": 1.0,
+        "windows": 6,
+        "addressed_windows": 1
+      },
+      "Session_4/10-00-415": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 2,
+        "addressed_windows": 0
+      },
+      "Session_4/11-00-428": {
+        "all_speech_top1": 0.0,
+        "addressed_speaker_top1": 0.0,
+        "windows": 5,
+        "addressed_windows": 3
+      },
+      "Session_4/15-00-480": {
+        "all_speech_top1": 0.7692307692307693,
+        "addressed_speaker_top1": 0.0,
+        "windows": 13,
+        "addressed_windows": 3
+      },
+      "Session_4/16-00-501": {
+        "all_speech_top1": 0.4,
+        "addressed_speaker_top1": NaN,
+        "windows": 20,
+        "addressed_windows": 0
+      },
+      "Session_4/18-00-512": {
+        "all_speech_top1": 0.36363636363636365,
+        "addressed_speaker_top1": 0.3333333333333333,
+        "windows": 11,
+        "addressed_windows": 9
+      },
+      "Session_4/19-00-532": {
+        "all_speech_top1": 0.8648648648648649,
+        "addressed_speaker_top1": 0.8648648648648649,
+        "windows": 37,
+        "addressed_windows": 37
+      },
+      "Session_4/20-00-540": {
+        "all_speech_top1": 0.1111111111111111,
+        "addressed_speaker_top1": NaN,
+        "windows": 9,
+        "addressed_windows": 0
+      },
+      "Session_4/21-00-559": {
+        "all_speech_top1": 0.4117647058823529,
+        "addressed_speaker_top1": 0.5,
+        "windows": 17,
+        "addressed_windows": 2
+      },
+      "Session_4/22-00-570": {
+        "all_speech_top1": 0.6176470588235294,
+        "addressed_speaker_top1": 0.631578947368421,
+        "windows": 34,
+        "addressed_windows": 19
+      },
+      "Session_4/23-00-578": {
+        "all_speech_top1": 0.6923076923076923,
+        "addressed_speaker_top1": 0.6666666666666666,
+        "windows": 26,
+        "addressed_windows": 12
+      },
+      "Session_4/24-00-594": {
+        "all_speech_top1": 0.7142857142857143,
+        "addressed_speaker_top1": 1.0,
+        "windows": 35,
+        "addressed_windows": 7
+      },
+      "Session_4/25-00-599": {
+        "all_speech_top1": 0.7894736842105263,
+        "addressed_speaker_top1": 1.0,
+        "windows": 19,
+        "addressed_windows": 6
+      },
+      "Session_4/26-00-615": {
+        "all_speech_top1": 1.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 3,
+        "addressed_windows": 0
+      },
+      "Session_4/29-00-654": {
+        "all_speech_top1": 0.0,
+        "addressed_speaker_top1": NaN,
+        "windows": 6,
+        "addressed_windows": 0
+      },
+      "Session_4/30-00-679": {
+        "all_speech_top1": 0.0,
+        "addressed_speaker_top1": 0.0,
+        "windows": 7,
+        "addressed_windows": 7
+      }
+    }
+  },
+  "current_model_addressed_top1": {
+    "Session_4": 0.5796460176991151,
+    "Session_12": 0.85
+  },
+  "integration_gate": {
+    "Session_4_min_addressed_top1": 0.65,
+    "Session_12_min_addressed_top1": 0.8,
+    "passed": true
+  },
+  "spatial_matcher_checkpoint": "C:\\Users\\melin\\easycom_saal\\reports\\easycom_gcc_bbox_speaker_pilot_v1\\spatial_matcher.pt"
+}
